@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/index_back"
+    android:orientation="vertical" >
+	
+    	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+ 
+        <EditText 
+	    android:id="@+id/login_username"
+	    android:layout_width="260dp"
+	    android:layout_height="30dp"
+	    android:textColor="#FFFFFF"
+	    android:textSize="18sp"
+	    android:layout_marginTop="100dp"
+        android:gravity="center"
+	    android:drawableLeft="@drawable/user"
+	    android:background="@android:color/transparent"
+	    android:hint="@string/login_user_hint"
+	    android:textColorHint="#ffffff"/>
+        
+        <View  
+        android:layout_height="2dp" 
+        android:layout_width="260dp"
+        android:background="#FFFFFF" />
+        
+        <EditText 
+	    android:id="@+id/login_password"
+	    android:layout_width="260dp"
+	    android:layout_height="30dp"
+	    android:textColor="#FFFFFF"
+	    android:textSize="18sp"
+	    android:inputType="textPassword"
+	    android:layout_marginTop="20dp"
+        android:gravity="center"
+	    android:drawableLeft="@drawable/password"
+	    android:background="@android:color/transparent"
+	    android:hint="@string/login_passwd_hint"
+	    android:textColorHint="#ffffff"/>
+
+        <View  
+            android:layout_height="2dp" 
+            android:layout_width="260dp"
+            android:background="#FFFFFF" />
+        
+        <Button
+            android:id="@+id/main_login_btn"
+            android:layout_width="277dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/login_btn"
+            android:gravity="center"
+            android:paddingLeft="130dp"
+            android:paddingRight="130dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+  
+        <Button
+            android:id="@+id/main_regist_btn"
+            android:layout_width="277dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/signin_btn"
+            android:gravity="center"
+            android:paddingLeft="130dp"
+            android:paddingRight="130dp"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_forget_passwd"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>
