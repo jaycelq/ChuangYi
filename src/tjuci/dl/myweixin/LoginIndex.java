@@ -33,7 +33,7 @@ public class LoginIndex extends Activity implements OnClickListener{
 		int btnId = v.getId();
 		switch (btnId) {
 		case R.id.chuangyi_today:
-			Intent intent = new Intent(LoginIndex.this, LoginActivity.class);
+			Intent intent = new Intent(LoginIndex.this, CyToday.class);
 			startActivity(intent);
 			break;
 
