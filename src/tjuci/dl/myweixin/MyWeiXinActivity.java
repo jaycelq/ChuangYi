@@ -45,6 +45,7 @@ public class MyWeiXinActivity extends Activity implements OnClickListener{
 			else {
 				Intent intent = new Intent(MyWeiXinActivity.this, LoginIndex.class);
 				startActivity(intent);//启动对应的Activity  此处为硬编码  不介意这么写  写成action形式 最好
+				this.finish();
 				Log.i("-------------", "------------------");
 			}
 			break;
