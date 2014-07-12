@@ -28,6 +28,9 @@
         <activity 
             android:name=".CyToday"
             android:screenOrientation="portrait" />
+        <activity 
+            android:name=".MyChuangyi"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

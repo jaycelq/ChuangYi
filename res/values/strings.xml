@@ -11,11 +11,20 @@
 <string name="login_user_hint">输入手机号码</string>
 <string name="login_passwd_hint">输入密码</string>
 <string name="login_forget_passwd">忘记密码?</string>
-<string name="my_chuangyi">我</string>
+<string name="me">我</string>
 <string name="ta_chuangyi">Ta</string>
 <string name="my_chuangyi_career">我的创意忆涯</string>
 <string name="see_other_chuangyi">见见其他创忆者</string>
 <string name="yes">确&#160;&#160;&#160;定</string>
 <string name="chuangyi_today">今日创忆</string>
 <string name="chuangyi_chance">还剩&#160;3&#160;次摇一摇换回忆机会</string>
+<string name="my_chuangyi">我的创意</string>
+<string name="my_name">韩梅梅</string>
+<string name="my_level">创忆能力：LV&#160;12</string>
+<string name="my_follow_num">234</string>
+<string name="my_follow">关注</string>
+<string name="my_fans_num">123</string>
+<string name="my_fans">粉丝</string>
+<string name="my_chuangyis_num">112</string>
+<string name="my_chuangyis">创忆</string>
 </resources>

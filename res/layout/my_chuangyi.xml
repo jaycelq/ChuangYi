@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+      	android:layout_width="fill_parent"
+	    android:layout_height="60dp"
+        android:background="#B94C5F"
+        android:orientation="horizontal">
+
+		<ImageView
+	  		android:id="@+id/cy_my_back"
+	   		android:layout_width="30dp"
+	    	android:layout_height="60dp"
+	    	android:layout_alignParentLeft="true"
+	    	android:src="@drawable/tri" />
+	
+		<TextView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="50dp"
+	    	android:gravity="center_vertical"
+	    	android:layout_centerInParent="true"
+	    	android:text="@string/my_chuangyi"
+	    	android:textSize="25sp"
+	    	android:textColor="#ffffff"/>
+
+	</RelativeLayout>
+ 	
+ 	<RelativeLayout
+      	android:layout_width="fill_parent"
+	    android:layout_height="160dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+		<ImageView
+		    android:id="@+id/my_photo"
+		    android:src="@drawable/me"
+	   		android:layout_width="10dp"
+	    	android:layout_height="80dp"
+	    	android:layout_marginLeft="20dp"
+	    	android:layout_marginTop="10dp" />
+	    	
+	    	<RelativeLayout
+	    	    android:layout_toRightOf="@id/my_photo"
+      			android:layout_width="wrap_content"
+	    		android:layout_height="fill_parent"
+	    		android:layout_marginLeft="20dp"
+	    		android:layout_marginTop="10dp" 
+        		android:orientation="vertical">
+
+				<TextView
+				    android:id="@+id/my_name"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_alignParentLeft="true"
+				    android:layout_alignParentTop="true"
+				    android:text="@string/my_name"
+				    android:textColor="#B94C5F"
+				    android:textSize="15sp" />
+	    			
+	    		<RelativeLayout
+    			    android:id="@+id/my_name_level"
+   					android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"
+    				android:layout_alignParentLeft="true"
+    				android:layout_below="@id/my_name"
+       				android:orientation="vertical">
+
+					<TextView
+					    android:id="@+id/my_level"
+				    	android:layout_width="wrap_content"
+				    	android:layout_height="wrap_content"
+				    	android:layout_alignParentLeft="true"
+				    	android:layout_alignParentTop="true"
+				    	android:text="@string/my_level"
+				    	android:textColor="#B94C5F"
+				    	android:textSize="12sp" />
+					
+					<ImageView
+					    android:src="@drawable/level"
+					    android:layout_width="100dp"
+					    android:layout_height="wrap_content"
+					    android:layout_centerVertical="true"
+					    android:layout_toRightOf="@id/my_level"
+					    android:layout_marginLeft="10dp"/>
+				</RelativeLayout>
+					
+	    			<!-- Layout of 关注 粉丝 创意 -->
+	    			<LinearLayout
+	    			    android:id="@+id/my_statics"
+      					android:layout_width="230dp"
+	    				android:layout_height="wrap_content"
+	    				android:layout_alignParentLeft="true"
+	    				android:layout_marginLeft="-20dp"
+	    				android:layout_below="@id/my_name_level"
+        				android:orientation="horizontal">
+					
+	    			    <RelativeLayout 
+	    			        android:layout_width="wrap_content"
+	    			        android:layout_height="wrap_content"
+	    			        android:orientation="vertical"
+	    			        android:layout_weight="1">
+	    			        
+	    			        <TextView 
+	    			            android:id="@+id/my_follow_num"
+	    			            android:layout_width="wrap_content"
+	    			            android:layout_height="wrap_content"
+	    			            android:layout_marginRight="10dp"
+	    			            android:text="@string/my_follow_num"
+	    			            android:layout_alignParentRight="true"
+	    			            android:textSize="18sp"
+	    			            android:textColor="#5F5F5F"/>
+	    			       	<TextView 
+	    			            android:layout_width="wrap_content"
+	    			            android:layout_height="wrap_content"
+	    			            android:layout_below="@id/my_follow_num"
+	    			            android:layout_marginRight="10dp"
+	    			            android:text="@string/my_follow"
+	    			            android:layout_alignParentRight="true"
+	    			            android:textSize="12sp"
+	    			            android:textColor="#5F5F5F"/>
+	    			        
+	    			    </RelativeLayout>
+		    			
+	    			    <View  
+            				android:layout_height="fill_parent" 
+            				android:layout_width="2dp"
+            				android:background="#CBCBCB" />
+	    			    
+		    			<RelativeLayout 
+	    			        android:layout_width="wrap_content"
+	    			        android:layout_height="wrap_content"
+	    			        android:orientation="vertical"
+	    			        android:layout_weight="1">
+	    			        
+	    			        <TextView 
+	    			            android:id="@+id/my_fans_num"
+	    			            android:layout_width="wrap_content"
+	    			            android:layout_height="wrap_content"
+	    			            android:layout_marginRight="10dp"
+	    			            android:text="@string/my_fans_num"
+	    			            android:layout_alignParentRight="true"
+	    			            android:textSize="18sp"
+	    			            android:textColor="#5F5F5F"/>
+	    			       	<TextView 
+	    			            android:layout_width="wrap_content"
+	    			            android:layout_height="wrap_content"
+	    			            android:layout_below="@id/my_fans_num"
+	    			            android:layout_marginRight="10dp"
+	    			            android:text="@string/my_fans"
+	    			            android:layout_alignParentRight="true"
+	    			            android:textSize="12sp"
+	    			            android:textColor="#5F5F5F"/>
+	    			        
+	    			    </RelativeLayout>
+	    			   	<View  
+            				android:layout_height="fill_parent" 
+            				android:layout_width="2dp"
+            				android:background="#CBCBCB" />
+	    			    
+		    			<RelativeLayout 
+	    			        android:layout_width="wrap_content"
+	    			        android:layout_height="wrap_content"
+	    			        android:orientation="vertical"
+	    			        android:layout_weight="1">
+	    			        
+	    			        <TextView 
+	    			            android:id="@+id/my_chuangyis_num"
+	    			            android:layout_width="wrap_content"
+	    			            android:layout_height="wrap_content"
+	    			            android:layout_marginRight="10dp"
+	    			            android:text="@string/my_chuangyis_num"
+	    			            android:layout_alignParentRight="true"
+	    			            android:textSize="18sp"
+	    			            android:textColor="#5F5F5F"/>
+	    			       	<TextView 
+	    			            android:layout_width="wrap_content"
+	    			            android:layout_height="wrap_content"
+	    			            android:layout_below="@id/my_chuangyis_num"
+	    			            android:layout_marginRight="10dp"
+	    			            android:text="@string/my_chuangyis"
+	    			            android:layout_alignParentRight="true"
+	    			            android:textSize="12sp"
+	    			            android:textColor="#5F5F5F"/>
+	    			        
+	    			    </RelativeLayout>
+					</LinearLayout>
+	    			
+				</RelativeLayout>
+        <View  
+            android:layout_height="2dp" 
+            android:layout_width="fill_parent"
+            android:layout_below="@id/my_photo"
+            android:layout_marginTop="10dp"
+            android:background="#CBCBCB" />
+
+	</RelativeLayout>
+</LinearLayout>
