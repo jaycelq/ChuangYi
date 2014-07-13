@@ -6,18 +6,8 @@
         <shape android:shape="rectangle" >
             <gradient
                 android:angle="270"
-                android:startColor="#000000"
-                android:centerColor="#FFFFFF"
-                android:endColor="#000000"/>
-        </shape>
-    </item>
-    <!-- layout foreground -->
-    <item
-        android:bottom="200px"
-        android:top="200px">
-        <!-- show rectangle area -->
-        <shape android:shape="rectangle" >
-            <solid android:color="#FFFFFF" />
+                android:startColor="#949494"
+                android:endColor="#EEEEEE"/>
         </shape>
     </item>
 </layer-list>

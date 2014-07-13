@@ -27,4 +27,17 @@
 <string name="my_fans">粉丝</string>
 <string name="my_chuangyis_num">112</string>
 <string name="my_chuangyis">创忆</string>
+<string name="my_praise_num">3&#160;个新点赞</string>
+<string name="my_comment_num">2&#160;条新评论</string>
+<string name="my_tocreate_num">1&#160;个待创忆</string>
+<string name="my_chuangyi_1">2014.6.14&#160;关注了&#160;李雷</string>
+<string name="lilei_name">李雷</string>
+<string name="lilei_level">创忆能力：LV&#160;11</string>
+<string name="lilei_follow_num">156</string>
+<string name="lilei_fans_num">181</string>
+<string name="lilei_chuangyis_num">126</string>
+<string name="my_chuangyi_2">2014.6.14&#160;创造了新回忆</string>
+<string name="my_chuangyi_record1">韩梅梅：&#160;今天客户肯定了我的提案，怎能不微笑，小伙伴们逛街走起！</string>
+<string name="my_record1_praise_num">71</string>
+<string name="my_record1_comment_num">21</string>
 </resources>
