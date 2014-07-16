@@ -55,14 +55,15 @@
 		</LinearLayout>
 		
 		<TextView
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_alignParentTop="true"
-	    android:layout_centerHorizontal="true"
-	    android:layout_marginTop="370dp"
-	    android:text="@string/ta_chuangyi"
-	    android:textColor="#ffffff"
-	    android:textSize="30pt" />
+		    android:id="@+id/big_other"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="370dp"
+		    android:text="@string/ta_chuangyi"
+		    android:textColor="#ffffff"
+		    android:textSize="30pt" />
 	
 		<LinearLayout
 		    android:layout_width="fill_parent"
@@ -73,10 +74,11 @@
 		    android:orientation="horizontal" >
 
 			<TextView
+			    android:id="@+id/other_chuangyi"
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
 			    android:layout_gravity="center_vertical|center"
-			     android:layout_marginLeft="30dp"
+			    android:layout_marginLeft="30dp"
 			    android:text="@string/see_other_chuangyi"
 			    android:textColor="#ffffff"
 			    android:textSize="10pt" />

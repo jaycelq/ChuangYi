@@ -100,9 +100,10 @@ public class CyToday extends Activity implements OnClickListener {
 		int btnId = v.getId();
 		switch (btnId) {
 		case R.id.cy_today_back:
-			Intent intent = new Intent(CyToday.this, LoginIndex.class);
-			intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-			startActivity(intent);
+//			Intent intent = new Intent(CyToday.this, LoginIndex.class);
+//			intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+//			startActivity(intent);
+			this.finish();
 			overridePendingTransition(R.anim.left_in, R.anim.right_out);
 			break;
 

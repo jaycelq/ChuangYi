@@ -23,6 +23,9 @@ public class LoginIndex extends Activity implements OnClickListener{
     ImageView myChuangyiTri;
     TextView myChuangyiText;
     TextView bigMe;
+    ImageView otherChuangyiTri;
+    TextView otherChuangyiText;
+    TextView bigOther;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +39,12 @@ public class LoginIndex extends Activity implements OnClickListener{
         myChuangyiText.setOnClickListener(this);
         bigMe = (TextView) findViewById(R.id.big_me);
         bigMe.setOnClickListener(this);
+        otherChuangyiTri = (ImageView) findViewById(R.id.tri1);
+        otherChuangyiTri.setOnClickListener(this);
+        otherChuangyiText = (TextView) findViewById(R.id.other_chuangyi);
+        otherChuangyiText.setOnClickListener(this);
+        bigOther = (TextView) findViewById(R.id.big_other);
+        bigOther.setOnClickListener(this);
         
     }
     
@@ -45,6 +54,7 @@ public class LoginIndex extends Activity implements OnClickListener{
 		switch (btnId) {
 		case R.id.chuangyi_today:
 			Intent intent1 = new Intent(LoginIndex.this, CyToday.class);
+			intent1.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
 			startActivity(intent1);
 			break;
 		case R.id.big_me:
@@ -52,6 +62,12 @@ public class LoginIndex extends Activity implements OnClickListener{
 		case R.id.my_chuangyi:
 			Intent intent2 = new Intent(LoginIndex.this, MyChuangyi.class);
 			startActivity(intent2);
+			break;
+		case R.id.big_other:
+		case R.id.tri1:
+		case R.id.other_chuangyi:
+			Intent intent3 = new Intent(LoginIndex.this, OthersChuangyi.class);
+			startActivity(intent3);
 			break;
 		case R.id.main_regist_btn://ע�ᰴť
 			
