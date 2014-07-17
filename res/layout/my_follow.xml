@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:scrollbars="none"
-    android:padding="5dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="5dp"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content">
     
@@ -15,22 +17,183 @@
             android:layout_gravity="center">
             <EditText 
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
                 android:layout_centerVertical="true"
                 android:background="@android:color/transparent"
-                android:textSize="30sp"/>
+                android:paddingLeft="5dp"
+                android:hint="@string/smile"
+                android:textSize="18sp"
+                android:textColorHint="#C4C4C4"/>
             <ImageView 
                 android:src="@drawable/search"
                 android:padding="10dp"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_alignParentRight="true"
                 android:adjustViewBounds="true"/>
         </RelativeLayout>
         <View  
-        	android:layout_height="4dp" 
+        	android:layout_height="2dp" 
         	android:layout_width="fill_parent"
         	android:background="#7D7D7D" />
+        <LinearLayout 
+	       	    android:layout_width="match_parent"
+	       	    android:layout_height="wrap_content"
+	       	    android:layout_gravity="center"
+    	    	android:layout_marginTop="10dp"
+	       	    android:orientation="vertical">
+	        <RelativeLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center">
+	            <ImageView
+	                android:src="@drawable/my_chuangyi_slogan"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:adjustViewBounds="true"
+	                android:layout_centerHorizontal="true"/>
+	           	<ImageView
+	                android:src="@drawable/my_similar_chuangyi"
+	                android:layout_width="47dp"
+	                android:layout_height="47dp"
+	                android:adjustViewBounds="true"
+	                android:layout_alignParentRight="true"/>
+	        </RelativeLayout>
+	       	<ImageView
+	                android:src="@drawable/my_chuangyi2"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:adjustViewBounds="true"/>
+	       	<LinearLayout 
+	       	    android:layout_width="fill_parent"
+	       	    android:layout_height="100dp"
+	       	    android:background="#ffffff"
+	       	    android:orientation="vertical">
+	           	<LinearLayout 
+		       	    android:layout_width="fill_parent"
+		       	    android:layout_height="80dp"
+		       	    android:orientation="horizontal">
+		           	<ImageView 
+		           	    android:src="@drawable/square_me"
+		           	    android:layout_width="wrap_content"
+		           	    android:layout_height="fill_parent"
+		           	    android:adjustViewBounds="true"/>
+		           	<TextView 
+		           	    android:id="@+id/other_chuangyi_record1"
+		           	    android:layout_width="wrap_content"
+		           	    android:layout_height="wrap_content"
+		           	    android:layout_marginLeft="10dp"
+		           	   	android:layout_gravity="center_vertical"
+		           	    android:textSize="18sp"
+		           	    android:text="@string/my_chuangyi_record1"
+		           	    android:textColor="#5F5F5F"/>
+		       	</LinearLayout>
+		       	<LinearLayout 
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		       	    android:layout_gravity="right|bottom"
+		       	    android:layout_marginRight="10dp">
+   		           	<TextView 
+		           	    android:layout_width="wrap_content"
+		           	    android:layout_height="wrap_content"
+		           	   	android:layout_gravity="center_vertical"
+		           	    android:textSize="12sp"
+		           	    android:text="@string/my_chuangyi_record1_time"
+		           	    android:textColor="#B24957"/>
+   		           	<ImageView 
+   		           	    android:src="@drawable/location"
+   		           	    android:layout_width="wrap_content"
+   		           	    android:layout_height="fill_parent"
+   		           	    android:adjustViewBounds="true"/>
+		           	<TextView 
+		           	    android:layout_width="wrap_content"
+		           	    android:layout_height="wrap_content"
+		           	   	android:layout_gravity="center_vertical"
+		           	    android:textSize="12sp"
+		           	    android:text="@string/my_chuangyi_record1_pos"
+		           	    android:textColor="#B24957"/>
+		       	</LinearLayout>
+		   	</LinearLayout>
+	       	
+	       	<LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="60dp"
+		    android:orientation="horizontal"
+		    android:background="#DEDAD9">
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="40dp"
+		        android:orientation="horizontal"
+		        android:layout_gravity="center"
+		        android:layout_weight="1">
+		        <ImageView 
+		            android:id="@+id/other_record1_praise_inform"
+		            android:src="@drawable/praise_icon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginLeft="20dp"
+		            android:adjustViewBounds="true"/>
+
+		        <TextView
+		            android:id="@+id/other_record1_prasie_num"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:layout_gravity="center_vertical"
+		            android:text="@string/my_record1_praise_num"
+		            android:textSize="18sp" 
+		            android:textColor="#5F5F5F"/>
+		    </LinearLayout>
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="40dp"
+		        android:orientation="horizontal"
+		        android:layout_gravity="center"
+		        android:layout_weight="1">
+		        <ImageView 
+		            android:id="@+id/other_record1_comment_inform"
+		            android:src="@drawable/comment_icon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginLeft="30dp"
+		            android:adjustViewBounds="true"/>
+
+		        <TextView
+		            android:id="@+id/other_record1_comment_num"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="5dp"
+		            android:layout_gravity="center_vertical"
+		            android:text="@string/my_record1_comment_num"
+		            android:textSize="18sp" 
+		            android:textColor="#5F5F5F"/>
+		    </LinearLayout>
+		   	<LinearLayout 
+		        android:layout_width="wrap_content"
+		        android:layout_height="40dp"
+		        android:orientation="horizontal"
+		        android:layout_gravity="center"
+		        android:layout_weight="1">
+   		        <TextView
+		            android:id="@+id/other_i_want_too"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="20dp"
+		            android:layout_gravity="center_vertical"
+		            android:text="@string/i_want_too"
+		            android:textSize="18sp" 
+		            android:textColor="#5F5F5F"/>
+		        <ImageView 
+		            android:id="@+id/other_i_want_too_icon"
+		            android:src="@drawable/confirm"
+		            android:layout_width="wrap_content"
+		            android:layout_height="fill_parent"
+		            android:layout_marginLeft="3dp"
+		            android:adjustViewBounds="true"/>
+		    </LinearLayout>
+		</LinearLayout>
+	       	
+			</LinearLayout>
     </LinearLayout>
 
 

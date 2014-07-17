@@ -21,6 +21,7 @@ import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -31,7 +32,8 @@ import android.widget.Toast;
  *
  */
 public class MyChuangyi extends Activity implements OnClickListener{
-	TextView myPraiseNum, myCommentNum, myTocreateNum, myChuangyi1, myChuangyi2, myChuangyiRecord1;
+	TextView myPraiseNum, myCommentNum, myTocreateNum, myChuangyi1, myChuangyi2, myChuangyiRecord1, lileiName;
+	ImageView btnBack, lileiPhoto;
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
@@ -62,6 +64,12 @@ public class MyChuangyi extends Activity implements OnClickListener{
         myChuangyiRecord1 = (TextView) findViewById(R.id.my_chuangyi_record1);
         text = "<font color=#B94C59>韩梅梅：</font>"+"今天客户肯定了我的提案，怎能不微笑，小伙伴们逛街走起！";
         myChuangyiRecord1.setText(Html.fromHtml(text));
+        btnBack = (ImageView) findViewById(R.id.cy_my_back);
+        btnBack.setOnClickListener(this);
+        lileiName = (TextView) findViewById(R.id.lilei_name);
+        lileiName.setOnClickListener(this);
+        lileiPhoto = (ImageView) findViewById(R.id.lilei_photo);
+        lileiPhoto.setOnClickListener(this);
     }
 	
 	
@@ -69,18 +77,15 @@ public class MyChuangyi extends Activity implements OnClickListener{
 	public void onClick(View v) {
 		int btnId = v.getId();
 		switch (btnId) {//判断点击的按钮
-		case R.id.main_login_btn://登录按钮
-
-			//else {
-				//Intent intent = new Intent(MyWeiXinActivity.this, LoginIndex.class);
-				//startActivity(intent);//启动对应的Activity  此处为硬编码  不介意这么写  写成action形式 最好
-				//this.finish();
-				//Log.i("-------------", "------------------");
-			//}
+		case R.id.cy_my_back://登录按钮
+			this.finish();
+			overridePendingTransition(R.anim.left_in, R.anim.right_out);
 			break;
 
-		case R.id.main_regist_btn://注册按钮
-			
+		case R.id.lilei_name:
+		case R.id.lilei_photo:
+			Intent intent = new Intent(this, LileiChuangyi.class);
+			startActivity(intent);
 			break;
 		}
 	}

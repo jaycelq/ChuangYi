@@ -1,5 +1,6 @@
 package tjuci.dl.myweixin;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.hardware.Sensor;
@@ -16,7 +17,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class CyToday extends Activity implements OnClickListener {
 	private SensorManager sensorManager;
@@ -79,7 +79,7 @@ public class CyToday extends Activity implements OnClickListener {
     };
     
     Handler handler = new Handler() {
-    	@Override
+		@Override
     	public void handleMessage(Message msg) {
     	super.handleMessage(msg);
     	switch (msg.what) {

@@ -35,6 +35,9 @@
         <activity 
             android:name=".OthersChuangyi"
             android:screenOrientation="portrait" />
+        <activity 
+            android:name=".LileiChuangyi"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

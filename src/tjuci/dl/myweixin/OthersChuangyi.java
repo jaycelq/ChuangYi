@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class OthersChuangyi extends FragmentActivity implements OnClickListener {
@@ -18,6 +19,7 @@ public class OthersChuangyi extends FragmentActivity implements OnClickListener 
 	private MyFragmentPageAdapter mAdapter;
 	private TextView tabLine;
 	private float temp = 0;
+	ImageView btnBack;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +27,8 @@ public class OthersChuangyi extends FragmentActivity implements OnClickListener 
         setContentView(R.layout.others_chuangyi);
 		tabLine = (TextView) findViewById(R.id.cursor_text);
         mViewPager = (ViewPager) findViewById(R.id.pager);
+        btnBack = (ImageView) findViewById(R.id.cy_other_back);
+        btnBack.setOnClickListener(this);
         
         //这里因为是3.0一下版本，所以需继承FragmentActivity，通过getSupportFragmentManager()获取FragmentManager
         //3.0及其以上版本，只需继承Activity，通过getFragmentManager获取事物
@@ -54,6 +58,10 @@ public class OthersChuangyi extends FragmentActivity implements OnClickListener 
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
+		case R.id.cy_other_back:
+			this.finish();
+			overridePendingTransition(R.anim.left_in, R.anim.right_out);
+			break;
 		default:
 			break;
 		}
